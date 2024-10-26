@@ -1,4 +1,4 @@
- <div className=""></div>import "./page.css";
+import "./page.css";
 import Aboutus from "@/components/aboutus/aboutus";
 import ApplicationProcess from "@/components/applicationprocess/applicationprocess";
 import CourseDetails from "@/components/coursedetails/coursedetails";
