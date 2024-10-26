@@ -1,4 +1,4 @@
-import "./page.css"
+ <div className=""></div>import "./page.css";
 import Aboutus from "@/components/aboutus/aboutus";
 import ApplicationProcess from "@/components/applicationprocess/applicationprocess";
 import CourseDetails from "@/components/coursedetails/coursedetails";
@@ -7,17 +7,16 @@ import Launchpad from "@/components/launchpad/launchpad";
 import QuestionandAnswer from "@/components/qna/qna";
 import Sessions from "@/components/sessions/session";
 
-
 export default function Home() {
   return (
     <>
-    <Header/>
-    <Aboutus/>
-    <Launchpad/>
-    <CourseDetails/>
-    <Sessions/>
-    <ApplicationProcess/>
-    <QuestionandAnswer/>
+      <Header />
+      <Aboutus />
+      <Launchpad />
+      <CourseDetails />
+      <Sessions />
+      <ApplicationProcess />
+      <QuestionandAnswer />
     </>
   );
 }
