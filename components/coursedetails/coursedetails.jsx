@@ -2,7 +2,7 @@ import CourseCard from "@/utils/coursecard/coursecard";
 import courseimage1 from "../../assets/images/courseimage1.png";
 import courseimage2 from "../../assets/images/courseimage2.png";
 import courseimage3 from "../../assets/images/courseimage3.png";
-import heart from "../../assets/images/heart.png";
+// import heart from "../../assets/images/heart.png";
 import "./coursedetails.css";
 import Image from "next/image";
 
@@ -42,7 +42,7 @@ const CourseDetails = () => {
         <div className="coursedetails_discription-title">
           <h1>
             <span>
-              <Image src={heart} height="20px" width="20px" />
+              {/* <Image src={heart} /> */}
             </span>
             <span>Graphikos Academy</span>
              offers a flexible learning experience that accommodates your
