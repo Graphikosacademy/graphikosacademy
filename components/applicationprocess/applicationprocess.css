@@ -1,0 +1,93 @@
+.applicationprocess_container{
+    width: 100%;
+    background-color: #1E1E1E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+    font-family: "Montserrat", sans-serif;
+
+}
+.applicationprocess_container-title h1 {
+       font-size: 25px;
+  font-weight: 900;
+  color: white;
+  
+  --x-offset: -0.0325em;
+  --y-offset: 0.0525em;
+  --stroke: 0.025em;
+  --background-color: rgb(0, 0, 0);
+  --stroke-color: rgb(255, 255, 255);
+  
+  text-shadow: 
+    
+    var(--x-offset)
+    var(--y-offset)
+    0px
+    var(--background-color), 
+    
+    calc( var(--x-offset) - var(--stroke) )
+    calc( var(--y-offset) + var(--stroke) )
+    0px
+    var(--stroke-color);
+}
+
+.applicationprocess-main_content li {
+    list-style: decimal;
+    font-size: 20px;
+}
+
+.applicationprocess-main_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+.applicationprocess-main_content p {
+   text-align: center;
+   margin: 1.5rem 0 0.75rem;
+   font-size: 20px;
+   font-weight: 500;
+   
+} 
+.applicationprocess-main_content ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 50%;
+}
+
+@media screen and (min-width: 100px) and (max-width: 480px) {
+  .applicationprocess_container-title h1 {
+    font-size: 22px;
+  }
+  .applicationprocess-main_content {
+    padding: 1rem 10px;
+  }
+  .applicationprocess-main_content ul {
+    width: 90%;
+  }
+  .applicationprocess-main_content li {
+    font-size: 14px;
+  }
+}
+
+@supports ( text-shadow: 1px 1px 1px 1px black ) {
+  h1 {
+    text-shadow:
+      
+      var(--x-offset)
+      var(--y-offset)
+      0px
+      0px
+      var(--background-color), 
+      
+      var(--x-offset) 
+      var(--y-offset)
+      var(--stroke)
+      0px
+      var(--stroke-color);
+    
+  }
+}
+

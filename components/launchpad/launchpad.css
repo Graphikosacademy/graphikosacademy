@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap");
+.launchpad_container {
+  padding: 3rem 0;
+  background-color: #1e1e1e;
+}
+.launchpad_header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* gap: 4rem; */
+}
+.launchpad_header-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 40%;
+  height: 150px;
+}
+.launchpad_header-star {
+  height: 100px;
+  width: 100px;
+
+}
+.launchpad_header-title h1 {
+  font-size: 40px;
+  font-weight: 900;
+  color: white;
+
+  --x-offset: -0.0325em;
+  --y-offset: 0.0525em;
+  --stroke: 0.025em;
+  --background-color: rgb(0, 0, 0);
+  --stroke-color: rgb(255, 255, 255);
+
+  text-shadow: var(--x-offset) var(--y-offset) 0px var(--background-color),
+    calc(var(--x-offset) - var(--stroke)) calc(var(--y-offset) + var(--stroke))
+      0px var(--stroke-color);
+}
+.launch_header-title-group {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100px;
+}
+#academy-title {
+  font-family: "Waiting for the Sunrise", cursive;
+  font-size: 22px;
+  color: #e5f33c;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 20px;
+}
+#titletag {
+  font-size: 20px;
+  white-space: nowrap;
+  font-family: "Montserrat";
+  font-weight: lighter;
+  text-align: center;
+}
+/* footer */
+.launchpad-main-content {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+}
+/* footer */
+@supports (text-shadow: 1px 1px 1px 1px black) {
+  h1 {
+    text-shadow: var(--x-offset) var(--y-offset) 0px 0px var(--background-color),
+      var(--x-offset) var(--y-offset) var(--stroke) 0px var(--stroke-color);
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 900px) {
+  .launchpad_header-star {
+    display: none;
+  }
+  .launchpad_header-rocket img {
+    height: 100px;
+    width: 100px;
+    display: none;
+    
+  }
+  .launchpad-main-content {
+    gap: 4rem;
+  }
+}
+@media screen and (min-width: 100px) and (max-width: 480px) {
+  .launchpad_header {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+  }
+  .launchpad_header-star {
+    display: none;
+  }
+  .launch_header-title-group {
+    width: 300px;
+  }
+  .launchpad_header-title {
+    width: 100%;
+  }
+  .launchpad_header-rocket {
+    display: none;
+  }
+  .launchpad_header-rocket img {
+    width: 100%;
+    height: 100%;
+  }
+  .launchpad-main-content {
+    margin-top: 5rem;
+    gap: 4rem;
+  }
+  #titletag {
+    font-size: 18px;
+  }
+}

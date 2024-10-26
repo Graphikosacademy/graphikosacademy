@@ -1,0 +1,38 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 250px;
+  height: 300px;
+  padding: 1rem 10px;
+  border-radius: 10px;
+  background-color: #fad85d;
+}
+.card-media {
+  height: fit-content;
+  width: 100%;
+  transform: translateY(-60px);
+}
+.card-media img {
+  width: 240px;
+  height: 240px;
+  object-fit: contain;
+  
+}
+.card-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 5px;
+  height: 40%;
+  transform: translateY(-30px);
+  font-family: "Montserrat";
+  color: #000;
+  font-weight: 500;
+}
+.card-title h1 {
+  font-size: 16px;
+}
+.card-title p {
+  font-size: 12px;
+}

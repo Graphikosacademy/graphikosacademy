@@ -1,0 +1,85 @@
+.coursecard-container {
+  width: 600px;
+
+  border-radius: 20px;
+  padding: 10px 1rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+.coursecard-container-header-media {
+  height: 200px;
+  width: 200px;
+
+}
+.coursecard-container-header-media img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+
+
+}
+.coursecard-container-header {
+  display: flex;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+position: absolute;
+  transform: translateY(-100px);
+}
+.coursecard-container-header-title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  margin-top: 2rem;
+  width: 80%;
+  color: #000;
+}
+.coursecard-container-main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 5rem;
+}
+.coursecard-container-main-content-list{
+  display: flex;
+  gap: 10px;
+}
+.coursecard-container-main-content-list h3 {
+  color: #62867C;
+}
+.coursecard-container-main-content-list p {
+  color: #000;
+}
+@media screen and (min-width: 100px) and (max-width: 480px) {
+  .coursecard-container {
+    width: 90%;
+  }
+  
+  .coursecard-container-header {
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    height: fit-content;
+  }
+  .coursecard-container-header-title h2 {
+    font-size: 18px;
+  }
+  .coursecard-container-header-title {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+
+  }
+  .coursecard-container-main-content {
+    margin-top: 0rem;
+    transform: translateY(-60px);
+  }
+  .coursecard-container-main-content-list {
+
+    flex-direction: column;
+  }
+}

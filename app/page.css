@@ -1,0 +1,17 @@
+/* 
+.register_pop {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 5px;
+}
+.register_pop-button {
+    background-color: rgb(144, 92, 24);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+} */

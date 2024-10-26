@@ -1,0 +1,52 @@
+.qna_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    padding: 2rem 2rem 2rem 1rem;
+    font-family: "Montserrat", sans-serif;
+
+}
+.qna_container-header {
+   width: 50%;
+}
+.qna_container-header h4 {
+    color: #000;
+    font-weight: 500;
+    font-size: 25px;
+}
+.qna_container-header p {
+    color: #000;
+    font-weight: 500;
+    font-size: 20px;
+}
+.qna_container-main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    width: 50%;
+}
+.qna_container-main-content-qna-item h5 {
+    color: #000;
+    font-size: 16px;
+}
+.qna_container-main-content-qna-item p {
+    color: #858585;
+}
+
+@media screen and (min-width: 100px) and (max-width: 480px) {
+    .qna_container-header {
+        width: 100%;
+    }
+    .qna_container-header h4 {
+        font-size: 20px;
+    }
+    .qna_container-header p {
+        font-size: 14px;
+    }
+    .qna_container-main-content {
+        width: 100%;
+    }
+}
