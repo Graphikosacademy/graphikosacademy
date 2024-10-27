@@ -28,13 +28,13 @@ const Navbar = () => {
         <a href="#" className="navbar-link">
           Home
         </a>
-        <a href="#" className="navbar-link">
+        <a href="/#Aboutus" className="navbar-link">
           About
         </a>
         <div className="app_logo">
           <Image src={applogo} alt="app-logo" />
         </div>
-        <a href="#" className="navbar-link">
+        <a href="/#course" className="navbar-link">
           Courses
         </a>
         <div className="contact_background">
@@ -48,7 +48,7 @@ const Navbar = () => {
         <div className="navbar-links_mobile-container">
           <div className="navbar-links-mobile">
             <a href="/">Home</a>
-            <a href="/">About</a>
+            <a href="/#Aboutus">About</a>
             <a href="/">Courses</a>
             <a href="/">Contact</a>
             <button>

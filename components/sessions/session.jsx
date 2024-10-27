@@ -60,7 +60,7 @@ const Sessions = () => {
           </div>
         </div>
       </div>
-      <div style={{backgroundColor: "#1E1E1E"}}>
+      <div style={{backgroundColor: "#1E1E1E"}} className='admisssion-main_container'>
 
       <div className="admission-container">
         <div className="admission-container_header">

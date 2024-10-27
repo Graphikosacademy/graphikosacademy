@@ -2,13 +2,13 @@ import CourseCard from "@/utils/coursecard/coursecard";
 import courseimage1 from "../../assets/images/courseimage1.png";
 import courseimage2 from "../../assets/images/courseimage2.png";
 import courseimage3 from "../../assets/images/courseimage3.png";
-// import heart from "../../assets/images/heart.png";
+import heart from "../../assets/images/heart.png";
 import "./coursedetails.css";
 import Image from "next/image";
 
 const CourseDetails = () => {
   return (
-    <div className="coursedetails_container">
+    <div id="course" className="coursedetails_container">
       <div className="cousedetails_header">
         <h1>COURSE DETAILS</h1>
       </div>
@@ -22,7 +22,7 @@ const CourseDetails = () => {
           certification="Upon successful completion, you'll receive a certificate from Graphikos Academy."
         />
         <CourseCard
-          cardbackground="#fad85d"
+          cardbackground="#67897D"
           title="ADVANCED COURSE IN DIGITAL INTERIOR DESIGN "
           image={courseimage2}
           overview="This advanced course builds upon the foundational knowledge acquired in the certificate course. You'll delve deeper into complex interior design projects and explore cutting-edge techniques."
@@ -42,7 +42,7 @@ const CourseDetails = () => {
         <div className="coursedetails_discription-title">
           <h1>
             <span>
-              {/* <Image src={heart} /> */}
+              <Image src={heart} />
             </span>
             <span>Graphikos Academy</span>
              offers a flexible learning experience that accommodates your
