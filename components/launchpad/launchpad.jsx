@@ -41,19 +41,19 @@ const Launchpad = () => {
           cardbackground="#67897D"
           image={image3}
           cardtitle="YOUR PERSONAL COACH"
-          discription="Get One-On-One Guidance To Reach Your Goals Faster."
+          discription="Get one-on-one guidance to reach your goals faster."
         />
         <Card
           cardbackground="#FAD85D"
           image={image4}
-          cardtitle="YOUR PERSONAL COACH"
-          discription="Get One-On-One Guidance To Reach Your Goals Faster."
+          cardtitle="LEARN WHEN YOU WANT TO "
+          discription="Choose online or in-person classes to fit your life."
         />
         <Card
           cardbackground="#67897D"
           image={image5}
-          cardtitle="YOUR PERSONAL COACH"
-          discription="Get One-On-One Guidance To Reach Your Goals Faster."
+          cardtitle="MEET YOUR TRIBE"
+          discription="Connect with other creatives and build your network."
         />
       </div>
     </div>

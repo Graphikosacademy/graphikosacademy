@@ -58,7 +58,7 @@
   gap: 1rem;
 }
 .footer_container-group-1-policy p {
-  color: blue;
+  color: #2C48FF;
 }
 
 @media screen and (min-width: 100px) and (max-width: 480px) {

@@ -26,7 +26,7 @@ const CourseDetails = () => {
           title="ADVANCED COURSE IN DIGITAL INTERIOR DESIGN "
           image={courseimage2}
           overview="This advanced course builds upon the foundational knowledge acquired in the certificate course. You'll delve deeper into complex interior design projects and explore cutting-edge techniques."
-          duration="08 Weeks"
+          duration="8-12 Weeks"
           certification="Upon successful completion, you'll receive a certificate from Graphikos Academy."
         />
         <CourseCard
@@ -34,7 +34,7 @@ const CourseDetails = () => {
           title="DIPLOMA IN DIGITAL INTERIOR DESIGN "
           image={courseimage3}
           overview="This comprehensive diploma program provides in-depth training in digital interior design, equipping you with the skills and knowledge needed to excel in the field."
-          duration="08 Weeks"
+          duration="-- Weeks"
           certification="Upon successful completion, you'll receive a certificate from Graphikos Academy."
         />
       </div>

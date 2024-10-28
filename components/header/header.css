@@ -105,9 +105,10 @@
   font-size: 85px;
   letter-spacing: 2px;
   font-family: "impact";
-  font-weight: 200;
+  font-weight: 700;
 background: #FF6007;
 background: radial-gradient(circle farthest-side at center center, #FF6007 0%, #FF0C81 100%);
+background-clip: text;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 }

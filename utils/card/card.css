@@ -6,7 +6,6 @@
   height: 300px;
   padding: 1rem 10px;
   border-radius: 10px;
-
 }
 .card-media {
   height: fit-content;
@@ -17,7 +16,6 @@
   width: 240px;
   height: 240px;
   object-fit: contain;
-  
 }
 .card-title {
   display: flex;
@@ -31,7 +29,7 @@
   font-weight: 500;
 }
 .card-title h1 {
-  font-size: 16px;
+  font-size: 15px;
 }
 .card-title p {
   font-size: 12px;
