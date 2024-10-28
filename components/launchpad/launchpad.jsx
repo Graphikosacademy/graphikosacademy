@@ -26,26 +26,31 @@ const Launchpad = () => {
       </div>
       <div className="launchpad-main-content">
         <Card
+          cardbackground="#67897D"
           image={image1}
           cardtitle="LEARN FROM THE BEST"
           discription="Our instructors are industry veterans who've mastered their craft."
         />
         <Card
+          cardbackground="#FAD85D"
           image={image2}
           cardtitle="DO MORE, LEARN MORE"
           discription="Dive into real-world projects and see your skills grow."
         />
         <Card
+          cardbackground="#67897D"
           image={image3}
           cardtitle="YOUR PERSONAL COACH"
           discription="Get One-On-One Guidance To Reach Your Goals Faster."
         />
         <Card
+          cardbackground="#FAD85D"
           image={image4}
           cardtitle="YOUR PERSONAL COACH"
           discription="Get One-On-One Guidance To Reach Your Goals Faster."
         />
         <Card
+          cardbackground="#67897D"
           image={image5}
           cardtitle="YOUR PERSONAL COACH"
           discription="Get One-On-One Guidance To Reach Your Goals Faster."

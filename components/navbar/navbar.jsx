@@ -3,6 +3,7 @@
 import "./navbar.css";
 import applogo from "../../assets/images/applogo.png";
 import contactlines from "../../assets/images/contactline.png";
+import arrow from "../../assets/images/arrownavbar.png";
 import { AiOutlineMenu } from "react-icons/ai";
 import { MdCancel } from "react-icons/md";
 import Image from "next/image";
@@ -42,6 +43,7 @@ const Navbar = () => {
           <a href="#" className="navbar-link">
             Contact
           </a>
+          <Image id="arrow-navbar" src={arrow}/>
         </div>
       </div>
       {istoggle && (
@@ -51,9 +53,6 @@ const Navbar = () => {
             <a href="/#Aboutus">About</a>
             <a href="/">Courses</a>
             <a href="/">Contact</a>
-            <button>
-              <a href="register">Register Now! </a>
-            </button>
           </div>
         </div>
       )}

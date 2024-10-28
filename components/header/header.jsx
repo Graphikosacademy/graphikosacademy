@@ -6,7 +6,7 @@ import headerimage from "../../assets/images/headerimage.png";
 import "./header.css";
 import Navbar from "../navbar/navbar";
 
-const Header = () => {
+const Header = ({setisclicked}) => {
   return (
     <div className="header_container">
       <Navbar />
@@ -31,10 +31,7 @@ const Header = () => {
         </div>
       </div>
       <div className="register_container">
-        <button>
-
-          <a href="register">Register Now! </a>
-        </button>
+        <button onClick={() => setisclicked(true)}>Register Now!</button>
       </div>
     </div>
   );

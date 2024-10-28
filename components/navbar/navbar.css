@@ -25,6 +25,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  height: 150px;
 }
 .contact_background a {
   margin-top: 10px;
@@ -32,6 +33,12 @@
 .contact_background img {
   position: absolute;
 }
+#arrow-navbar {
+  position: absolute;
+  bottom: 0;
+  animation: arrowanimation 0.75s ease-in-out infinite;
+}
+
 /* mobile screen */
 .navbar_small_screen {
   display: none;
@@ -123,5 +130,16 @@
   }
   100% {
     width: 90%;;
+  }
+}
+@keyframes arrowanimation {
+  0% {
+    transform: translateY(15px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(15px);
   }
 }

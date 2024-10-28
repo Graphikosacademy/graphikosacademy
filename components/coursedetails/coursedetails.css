@@ -61,7 +61,8 @@
 .coursedetails_discription {
   width: 100%;
   display: flex;
-  justify-content: center
+  justify-content: center;
+  padding-top: 3rem;
   
 }
 .coursedetails_discription-title h1 {
