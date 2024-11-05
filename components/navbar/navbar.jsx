@@ -43,7 +43,7 @@ const Navbar = () => {
           <a href="#" className="navbar-link">
             Contact
           </a>
-          <Image id="arrow-navbar" src={arrow}/>
+          <Image id="arrow-navbar" src={arrow} />
         </div>
       </div>
       {istoggle && (
@@ -51,7 +51,7 @@ const Navbar = () => {
           <div className="navbar-links-mobile">
             <a href="/">Home</a>
             <a href="/#Aboutus">About</a>
-            <a href="/">Courses</a>
+            <a href="/#course">Courses</a>
             <a href="/">Contact</a>
           </div>
         </div>

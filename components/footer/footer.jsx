@@ -18,9 +18,9 @@ const Footer = () => {
       <div className="footer_container-group-1">
         <div className="footer_container-group-1-title">
           <h4>Company</h4>
-          <p>Aboutus</p>
-          <p>Course</p>
-          <p>Contact</p>
+          <a href="/#Aboutus">Aboutus</a>
+          <a href="/#course">Course</a>
+          <a href="/#">Contact</a>
         </div>
         <div className="footer_container-group-1-policy">
           <p>Terms</p>

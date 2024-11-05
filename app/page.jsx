@@ -15,7 +15,40 @@ import { AiFillDashboard } from "react-icons/ai";
 
 const Home = () => {
   const [isclicked, setisclicked] = useState(false);
+  const [contactform, setcontactform] = useState({
+    name: "",
+    email: "",
+    mobilenumber: "",
+  });
+  const [isloading, setisloading] = useState(false);
 
+  const onsubmit = async (e) => {
+    e.preventDefault();
+    setisloading(true);
+    const response = await fetch("/api/contact", {
+      method: "POST",
+      body: JSON.stringify({
+        emailfrom: contactform.email,
+        emailto: "sagarjain.jain10@gmail.com",
+        name: contactform.name,
+        mobilenumber: contactform.mobilenumber,
+      }),
+    });
+
+    if (response.status === 200) {
+      setTimeout(() => {
+        setisloading(false);
+        setisclicked(false);
+        // toast.success("Message sent successfully");
+        contactform.email = "";
+        contactform.name = "";
+        contactform.mobilenumber = "";
+      }, 1000);
+    } else if (response.status === 500) {
+      // toast.error("Something Went Wrong! Try Again!");
+      setisloading(false);
+    }
+  };
 
   return (
     <>
@@ -23,15 +56,44 @@ const Home = () => {
         <div className="register-container">
           <div className="register-form">
             <h1>Sign In / Register</h1>
-            <form>
+            <form onSubmit={onsubmit}>
               <label htmlFor="Name"> Your Name</label>
-              <input Id="Name" />
-              <label htmlFor="Name">Your Phone Number</label>
-              <input Id="Name" />
-              <label htmlFor="Name">Your Email</label>
-              <input Id="Name" />
-              <button>Submit</button>
-              <button id="cancel-button" onClick={() => setisclicked(false)}>X</button>
+              <input
+                required
+                value={contactform.name}
+                inputMode="text"
+                Id="Name"
+                onChange={(e) =>
+                  setcontactform({ ...contactform, name: e.target.value })
+                }
+              />
+              <label htmlFor="Mobilenumber">Your Phone Number</label>
+              <input
+                required
+                value={contactform.mobilenumber}
+                inputMode="numeric"
+                Id="Mobilenumber"
+                onChange={(e) =>
+                  setcontactform({
+                    ...contactform,
+                    mobilenumber: e.target.value,
+                  })
+                }
+              />
+              <label htmlFor="Email">Your Email</label>
+              <input
+                required
+                value={contactform.email}
+                inputMode="email"
+                Id="Email"
+                onChange={(e) =>
+                  setcontactform({ ...contactform, email: e.target.value })
+                }
+              />
+              <button type="submit">{isloading === true ? <span class="loader"></span> : "Submit"}</button>
+              <button id="cancel-button" onClick={() => setisclicked(false)}>
+                X
+              </button>
             </form>
           </div>
         </div>
