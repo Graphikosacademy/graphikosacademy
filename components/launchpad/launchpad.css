@@ -1,4 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap");
+@font-face {
+  font-family: 'Waiting for the Sunrise';
+  src: url("../../assets/font/WaitingfortheSunrise-Regular.ttf");
+}
 .launchpad_container {
   padding: 3rem 0;
   background-color: #1e1e1e;
@@ -48,7 +51,7 @@
   height: 100px;
 }
 #academy-title {
-  font-family: "Waiting for the Sunrise", cursive;
+  font-family: "Waiting for the Sunrise";
   font-size: 22px;
   color: #e5f33c;
   position: absolute;
@@ -62,6 +65,7 @@
   font-family: "Montserrat";
   font-weight: lighter;
   text-align: center;
+  color: white;
 }
 /* footer */
 .launchpad-main-content {

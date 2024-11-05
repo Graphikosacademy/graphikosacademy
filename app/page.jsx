@@ -12,6 +12,7 @@ import Image from "next/image";
 import logo from "../assets/images/logo.png";
 import { useState, useEffect } from "react";
 import { AiFillDashboard } from "react-icons/ai";
+import Navbar from "@/components/navbar/navbar";
 
 const Home = () => {
   const [isclicked, setisclicked] = useState(false);
@@ -107,6 +108,7 @@ const Home = () => {
           />
         </div>
       </div>
+      <Navbar/>
       <Header setisclicked={setisclicked} />
       <Aboutus />
       <Launchpad />

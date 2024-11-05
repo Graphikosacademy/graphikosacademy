@@ -41,7 +41,7 @@ const CourseDetails = () => {
       <div className="coursedetails_discription">
         <div className="coursedetails_discription-title">
           <h1>
-            <span>
+            <span style={{color: "#000"}}>
               {/* <Image src={heart} /> */}
             </span>
             <span>Graphikos Academy</span>

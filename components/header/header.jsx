@@ -9,7 +9,6 @@ import Navbar from "../navbar/navbar";
 const Header = ({setisclicked}) => {
   return (
     <div className="header_container">
-      <Navbar />
       <div className="header_container-hero">
         <div className="header_container-image1">
           <Image src={ladyimage} />
