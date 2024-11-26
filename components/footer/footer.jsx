@@ -3,7 +3,15 @@ import headerimage from "../../assets/images/headerimage.png";
 import { AiFillInstagram } from "react-icons/ai";
 import Image from "next/image";
 
+
+
 const Footer = () => {
+
+const HandleSubmit = () => {
+  // If you want to open an external link directly
+  window.location.href =
+    "https://www.instagram.com/graphi.kos_academy/profilecard/?igsh=MTZvanBlem10OXJncw==";
+  };
   return (
     <div className="footer_container">
       <div className="footer_container-group">
@@ -12,7 +20,10 @@ const Footer = () => {
           <Image src={headerimage} alt="acedemy" />
         </div>
         <div className="footer_container-title-icons">
-          <AiFillInstagram size={30} />
+          <AiFillInstagram
+            size={30}
+            onClick={HandleSubmit}
+          />
         </div>
       </div>
       <div className="footer_container-group-1">
