@@ -54,6 +54,10 @@
     font-weight: 100;
       font-family: "Montserrat", sans-serif;
 }
+.aboutus_container-footer p {
+    color: white;
+    font-weight: 100;
+}
 @supports ( text-shadow: 1px 1px 1px 1px black ) {
   h1 {
     text-shadow:
