@@ -30,7 +30,6 @@ const Home = () => {
       method: "POST",
       body: JSON.stringify({
         emailfrom: contactform.email,
-
         name: contactform.name,
         mobilenumber: contactform.mobilenumber,
       }),
